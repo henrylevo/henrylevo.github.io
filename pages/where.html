@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Where</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+ -->
+	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- JavaScript
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="../js/myScripts.js"></script>
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+
+<body>
+
+	<!-- Primary Manu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<div class="navbar">
+		<div class="persona">
+			<img src="../images/headshot.jpg" alt="portrait">
+			<h3>Henry Levo</h3>
+			<p>Web Designer & Web Developer</p>
+		</div>
+		<div class="menubar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="cv.html">Curriculum Vitae</a></li>
+				<li><a href="cl.html">Cover Letter</a></li>
+				<li><a href="ref.html">Referanses</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a class="active" href="where.html">Where am I now?</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>Developed by Henry Levo</p>
+		</div>
+	</div>
+
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="section">
+						<div class="container">
+								<div class="u-full-width">
+									<header class="map-header">
+										<h3>My Google Maps Demo</h3>
+									</header>
+									<div id="map"></div>
+									<footer class="map-footer">
+										<div>
+											<h4>Headline!!</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+												industry. Lorem Ipsum has been the industry's standard dummy text 
+												ever since the 1500s, when an unknown printer took a galley of type 
+												and scrambled it to makea type specimen book. It has survived not 
+												only five centuries, aining Lorem Ipsum passages, 
+												and more recently with desktop publishing software like Aldus PageMaker 
+												including versions of Lorem Ipsum.</p>
+										</div>
+									</footer>
+								</div>
+						</div>
+				</div>
+
+<!-- Google Maps Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+				<script>
+						function initMap() {
+							var posNow = {lat: 59.911491, lng: 10.757933};
+							var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 2,
+								center: posNow,
+								styles: [
+								{elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+								{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+								{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+								{
+									featureType: 'administrative.locality',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#d59563'}]
+								},
+								{
+									featureType: 'poi',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#d59563'}]
+								},
+								{
+									featureType: 'poi.park',
+									elementType: 'geometry',
+									stylers: [{color: '#263c3f'}]
+								},
+								{
+									featureType: 'poi.park',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#6b9a76'}]
+								},
+								{
+									featureType: 'road',
+									elementType: 'geometry',
+									stylers: [{color: '#38414e'}]
+								},
+								{
+									featureType: 'road',
+									elementType: 'geometry.stroke',
+									stylers: [{color: '#212a37'}]
+								},
+								{
+									featureType: 'road',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#9ca5b3'}]
+								},
+								{
+									featureType: 'road.highway',
+									elementType: 'geometry',
+									stylers: [{color: '#746855'}]
+								},
+								{
+									featureType: 'road.highway',
+									elementType: 'geometry.stroke',
+									stylers: [{color: '#1f2835'}]
+								},
+								{
+									featureType: 'road.highway',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#f3d19c'}]
+								},
+								{
+									featureType: 'transit',
+									elementType: 'geometry',
+									stylers: [{color: '#2f3948'}]
+								},
+								{
+									featureType: 'transit.station',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#d59563'}]
+								},
+								{
+									featureType: 'water',
+									elementType: 'geometry',
+									stylers: [{color: '#17263c'}]
+								},
+								{
+									featureType: 'water',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#515c6d'}]
+								},
+								{
+									featureType: 'water',
+									elementType: 'labels.text.stroke',
+									stylers: [{color: '#17263c'}]
+								}
+							]
+							});
+							var marker = new google.maps.Marker({
+								position: posNow,
+								map: map
+							});
+						}
+			</script>
+			<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDeFpkCX8efh8vTQYZPqOfDkBTokI2tew&callback=initMap">
+			</script>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+
+</html>

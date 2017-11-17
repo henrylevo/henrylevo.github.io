@@ -1,0 +1,147 @@
+/*
+* The style of Henry Levo's website
+* Copyright, Henry Levo  
+* 16.11.2017
+*
+*/
+
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Shared
+    - Section
+
+Main Page
+    - Primary Menu
+    - Profile Picture
+
+Where Page
+    - Google Maps
+
+*/
+
+
+/* Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+    text-align: center;
+    background-color: #333;
+}
+
+/* Primary Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+    background-color: #fff;
+    color: #333333;
+    width: 275px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.persona {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.persona img {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.menubar {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.menubar ul {
+    list-style-type: none;
+}
+
+.menubar li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menubar li a.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.menubar li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; 
+}
+
+.menubar li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.copyright {
+    color: #333;
+    text-align: center;
+    margin-top: 27vh;
+    font-size: 1rem;
+}
+
+/* Profile Picture
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.profile-image {
+    background-image: url("../images/girl.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Google Maps
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.map-header {
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+}
+
+#map {
+    height: 50vh;
+    width: 100%;
+}
+
+.map-footer {
+    height: 40vh;
+    width: 100%;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.holder {
+    font-size: 5em;
+    color: red; 
+    background-color: grey;
+    text-align: center;
+}
