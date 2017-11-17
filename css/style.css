@@ -101,6 +101,16 @@ Where Page
     font-size: 1rem;
 }
 
+.menu-btn {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    overflow: hidden;
+    left: 275px;
+    top: 1vh;
+    padding: 5px !Important;
+}
+
 /* Profile Picture
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .profile-image {
@@ -140,8 +150,8 @@ Where Page
 
 
 .holder {
-    font-size: 5em;
-    color: red; 
-    background-color: grey;
+    color: #fff; 
+    background-color:#222;
     text-align: center;
+    height: 500px;
 }
