@@ -11,10 +11,14 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 Shared
     - Section
+    - Header
 
 Main Page
     - Primary Menu
-    - Profile Picture
+    - Landing Page
+
+CV Page
+    - The CV
 
 Where Page
     - Google Maps
@@ -26,18 +30,51 @@ Where Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
     text-align: center;
-    background-color: #333;
+    padding: 0px !Important;
+    height: 100vh;
+    background-color: #17263C;
 }
 
-/* Primary Menu
+.header {
+    color: #fff; 
+    text-align: center;
+}
+
+.phototag {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.25);
+}
+
+/* Main Page: Primary Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.navbar {
+.sidenav {
     background-color: #fff;
     color: #333333;
-    width: 275px;
+    width: 0;
     height: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #333;
+}
+
+#main {
+    transition: margin-left .5s;
 }
 
 .persona {
@@ -101,57 +138,259 @@ Where Page
     font-size: 1rem;
 }
 
-.menu-btn {
-    height: 50px;
-    width: 50px;
+.menubtn {
     position: fixed;
     overflow: hidden;
-    left: 275px;
-    top: 1vh;
-    padding: 5px !Important;
+    left: 1vw;
+    top: 2vh;
+    padding: 0px !Important;
+    color: white;
+    font-size: 1.5em !Important;
+    cursor: pointer;
 }
 
-/* Profile Picture
+
+/* Landing page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.profile-image {
-    background-image: url("../images/girl.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.hero {
+    background-image: url("../images/cityscape.jpg");
+    background-size: cover;
     height: 100vh;
 }
 
-/* Google Maps
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.map-header {
-    height: 10vh;
-    width: 100%;
+.landingpage {
+    text-align: center;
     color: #fff;
+}
+
+.landingpage img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.next-section {
+    height: 500px;
+    background-color: #17263C;
+}
+
+/* Landing page: Animation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.element-animation{
+    animation: animationFrames ease 5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+    -webkit-animation: animationFrames ease 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+    -moz-animation: animationFrames ease 5s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-fill-mode:forwards; /*FF 5+*/
+    -o-animation: animationFrames ease 5s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -o-animation-fill-mode:forwards; /*Not implemented yet*/
+    -ms-animation: animationFrames ease 5s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+    -ms-animation-fill-mode:forwards; /*IE 10+*/
+  }
+  
+  @keyframes animationFrames{
+    0% {
+      transform:  translate(0px, 120vh)  ;
+    }
+    21% {
+      transform:  translate(0px,30vh)  ;
+    }
+    42% {
+      transform:  translate(0px,50vh)  ;
+    }
+    67% {
+      transform:  translate(0px,35vh)  ;
+    }
+    100% {
+      transform:  translate(0px,40vh)  ;
+    }
+  }
+  
+  @-moz-keyframes animationFrames{
+    0% {
+      -moz-transform:  translate(124px,203px)  ;
+    }
+    21% {
+      -moz-transform:  translate(125px,36px)  ;
+    }
+    42% {
+      -moz-transform:  translate(125px,85px)  ;
+    }
+    67% {
+      -moz-transform:  translate(125px,60px)  ;
+    }
+    100% {
+      -moz-transform:  translate(125px,70px)  ;
+    }
+  }
+  
+  @-webkit-keyframes animationFrames {
+    0% {
+      -webkit-transform:  translate(124px,203px)  ;
+    }
+    21% {
+      -webkit-transform:  translate(125px,36px)  ;
+    }
+    42% {
+      -webkit-transform:  translate(125px,85px)  ;
+    }
+    67% {
+      -webkit-transform:  translate(125px,60px)  ;
+    }
+    100% {
+      -webkit-transform:  translate(125px,70px)  ;
+    }
+  }
+  
+  @-o-keyframes animationFrames {
+    0% {
+      -o-transform:  translate(124px,203px)  ;
+    }
+    21% {
+      -o-transform:  translate(125px,36px)  ;
+    }
+    42% {
+      -o-transform:  translate(125px,85px)  ;
+    }
+    67% {
+      -o-transform:  translate(125px,60px)  ;
+    }
+    100% {
+      -o-transform:  translate(125px,70px)  ;
+    }
+  }
+  
+  @-ms-keyframes animationFrames {
+    0% {
+      -ms-transform:  translate(124px,203px)  ;
+    }
+    21% {
+      -ms-transform:  translate(125px,36px)  ;
+    }
+    42% {
+      -ms-transform:  translate(125px,85px)  ;
+    }
+    67% {
+      -ms-transform:  translate(125px,60px)  ;
+    }
+    100% {
+      -ms-transform:  translate(125px,70px)  ;
+    }
+  }
+
+
+
+/* CV Page: The CV
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cv-page {
+    background: #1270E3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #1270E3, #59C2FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #1270E3, #59C2FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #1270E3, #59C2FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #1270E3, #59C2FF); /* Standard syntax */
+    height: 100vh;
+    width: 100%;
+}
+
+.pages {
+    background-color: #fff;
+    margin: 0px !Important;
+    height: 650px;
+    border-radius: 10px !Important;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-one {
+    margin: 10px 0 0 15px !Important;
+    border-right: 1px solid #888;
+}
+
+.page-two {
+    margin: 10px 0 0 15px !Important;
+}
+
+.page-one > h3 {
+    text-align: center;
+}
+
+.page-two > h3 {
+    text-align: center;
+}
+
+.last-update {
+    text-align: right;
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+.switch-btn {
+    margin-top: 10px;
+}
+
+#classic-btn {
+    padding: 8px;
+    border-radius: 10px 0 0 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #4F4F4F;
+    background: #333333;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 25px 25px;
+}
+
+#styled-btn {
+    padding: 8px;
+    margin-left: -5px;
+    border-radius: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #E0E0E0;
+    background: #3397F1;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.cv-time {
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+.cv-title > h5, p {
+    margin: 0 !Important;
+}
+
+.cv-title > h5 {
+    font-size: 1.3em;
+    color: palevioletred;
+}
+
+.cv-title > p {
+    font-size: 0.9em;
+    margin-bottom: 10px !Important;
+}
+
+/* Where Page: Google Maps
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.map-page {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #17263C;
 }
 
 #map {
-    height: 50vh;
-    width: 100%;
-}
-
-.map-footer {
-    height: 40vh;
-    width: 100%;
-    color: #fff;
+    height: 60vh;
 }
 
 
-
-
-
-
-
-
-
-.holder {
-    color: #fff; 
-    background-color:#222;
-    text-align: center;
-    height: 500px;
-}

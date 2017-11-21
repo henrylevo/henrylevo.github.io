@@ -23,51 +23,82 @@
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/style.css">
-
-	<!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="icon" type="image/png" href="../images/favicon.png">
-
-</head>
-
-<body>
-
-	<!-- Primary Manu
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<div class="navbar">
-		<div class="persona">
-			<img src="../images/headshot.jpg" alt="portrait">
-			<h3>Henry Levo</h3>
-			<p>Web Designer & Web Developer</p>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+		<!-- Favicon
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="../images/favicon.png">
+	
+	</head>
+	
+	<body>
+	
+		<!-- Primary Manu
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="persona">
+				<img src="../images/headshot.jpg" alt="portrait">
+				<h3>Henry Levo</h3>
+				<p>Web Designer & Web Developer</p>
+				<div class="menubar">
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="cv.html">Curriculum Vitae</a></li>
+							<li><a href="cl.html">Cover Letter</a></li>
+							<li><a href="ref.html">Referanses</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="where.html">Where am I now?</a></li>
+							<li><a class="active" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+			</div>
+				
+			<div class="copyright">
+				<p>Developed by Henry Levo</p>
+			</div>
 		</div>
-		<div class="menubar">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="cv.html">Curriculum Vitae</a></li>
-				<li><a href="cl.html">Cover Letter</a></li>
-				<li><a href="ref.html">Referanses</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="where.html">Where am I now?</a></li>
-				<li><a class="active" href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		<div class="copyright">
-			<p>Developed by Henry Levo</p>
-		</div>
-	</div>
-
-	<!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="holder u-full-width">
-									<h1>Contact!</h1>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-            </div>
-        </div>
-    </main>  
+		<span onclick="openNav()" class="menubtn fa">&#xf0c9;</span>
+	
+		<!-- Primary Page Layout
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<main id="main" class="">
+					<div class="container">
+						<div class="section">
+							<h1>Headline! Contact me!</h1>
+							<p>hfwioa haiwhf iawfia ifwh adna arkg aøkh aeja gaækg ajkhg seh eshpagøaighn ioang a gaihjbn ioahjga </p>
+						</div>
+						<!-- The contact form -->
+						<form>
+								<div class="row">
+									<div class="six columns">
+										<label for="exampleEmailInput">Your email</label>
+										<input class="u-full-width" type="email" placeholder="example@email.com" id="exampleEmailInput">
+									</div>
+									<div class="six columns">
+										<label for="exampleRecipientInput">Reason for contacting</label>
+										<select class="u-full-width" id="exampleRecipientInput">
+											<option value="Option 1">Questions</option>
+											<option value="Option 2">Work</option>
+											<option value="Option 3">Can I get your number?</option>
+										</select>
+									</div>
+								</div>
+								<label for="exampleMessage">Message</label>
+								<textarea class="u-full-width" placeholder="Hi Henry …" id="exampleMessage"></textarea>
+								<label class="example-send-yourself-copy">
+									<input type="checkbox">
+									<span class="label-body">Send a copy to yourself</span>
+								</label>
+								<input class="button-primary" type="submit" value="Submit">
+							</form>
+					</div>
+			</main>  
+	
+		<!-- JavaScript
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script src="../js/myScripts.js"></script>
+	
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

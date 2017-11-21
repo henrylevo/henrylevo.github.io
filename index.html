@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,34 +35,339 @@
 
 	<!-- Primary Manu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<section class="navbar">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<div class="persona">
 			<img src="images/headshot.jpg" alt="portrait">
 			<h3>Henry Levo</h3>
 			<p>Web Designer & Web Developer</p>
+			<div class="menubar">
+				<ul>
+					<li>
+						<a class="active" href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#cv">Curriculum Vitae</a>
+					</li>
+					<li>
+						<a href="#cl">Cover Letter</a>
+					</li>
+					<li>
+						<a href="#ref">Referanses</a>
+					</li>
+					<li>
+						<a href="#port">Portfolio</a>
+					</li>
+					<li>
+						<a href="#where">Where am I now?</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<nav class="menubar">
-			<ul>
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="pages/cv.html">Curriculum Vitae</a></li>
-				<li><a href="pages/cl.html">Cover Letter</a></li>
-				<li><a href="pages/ref.html">Referanses</a></li>
-				<li><a href="pages/portfolio.html">Portfolio</a></li>
-				<li><a href="pages/where.html">Where am I now?</a></li>
-				<li><a href="pages/contact.html">Contact</a></li>
-			</ul>
-		</nav>
+
 		<div class="copyright">
 			<p>Developed by Henry Levo</p>
 		</div>
-	</section>
+	</div>
+	<span onclick="openNav()" class="menubtn fa">&#xf0c9;</span>
 
-	<!-- Primary Page Layout: Profile Picture
+	<!-- Primary Page Layout: Landing Page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<main>
-		<div class="profile-image"></div>
-	</main>
+	<main id="main">
+
+		<div class="section hero">
+			<div class="element-animation container landingpage">
+				<div class="row">
+					<img src="images/headshot.jpg" alt="portrait">
+					<h1>Henry Levo</h1>
+					<h5>Web Designer & Developer</h5>
+					<p>jbjwfaw</p>
+				</div>
+				<div class="row">
+					<p class="phototag">Photo by
+						<a href="https://unsplash.com/photos/aRTjFXs6HNc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas Franco</a> on
+						<a href="https://unsplash.com/">Unsplash</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+<!-- Primary Page Layout: CV
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="cv" class="section cv-page">
+			<div class="container">
+				<div class="row">
+					<div class="header u-full-width">
+						<h1>Curriculum Vitae!</h1>
+						<p>Lorem Ipsum is simply dummy text the industry's staook a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+				</div>
+
+				<!-- ––––––––– Style buttons ––––––––– -->
+				<div class="row pages">
+					<div class="switch-btn offset-by-ten two columns">
+						<span onclick="switchClassic()" id="classic-btn">Classic</span>
+						<span onclick="switchStyled()" id="styled-btn">Styled</span>
+					</div>
+
+					<!-- ––––––––– Work ––––––––– -->
+					<div class="page-one one-half column">
+						<h3>Work</h3>
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Jun 2017 - Des 2017</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>System Consultant</h5>
+								<p>NEW by Sigma</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 2 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Jan 2017 - Apr 2017</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Developer</h5>
+								<p>
+									<q>visharw</q>
+								</p>
+								<p>Bachelorproject in Business Intelligence, Questback AS</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 3 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Apr 2016 - Apr 2017</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Support Consultant</h5>
+								<p>Sigma ITM Norway</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 4 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Jun 2013 - Jan 2014</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Mobile Securityguard</h5>
+								<p>Securitas AS</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 5 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Sep 2012 - Jun 2013</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Airport Security</h5>
+								<p>Securitas Transport Aviation Security AS</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 6 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>2009 - 2011,
+									<br> 2014 - 2015</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>System Consultant</h5>
+								<p>NEW by Sigma</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- ––––––––– Education ––––––––– -->
+					<div class="page-two one-half column">
+						<h3>Education</h3>
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Aug 2014 - Jun 2017</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Bachelor in Information Technology and E-Business</h5>
+								<p>Westerdals Oslo School of Arts, Communication and Technology</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 2 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Aug 2013 - Jun 2014</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Economics and Administration</h5>
+								<p>Handelshøyskolen BI - BI Trondheim</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 3 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Nov 2011 - Jul 2012</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Language Education (Mandarin Chinese)</h5>
+								<p>Southwestern University of Finance and Economics</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 4 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Aug 2010 - Jun 2011</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Driver/2nd Medic</h5>
+								<p>The Norwegian Armed Forces, Army, Medical Battalion</p>
+							</div>
+						</div>
+
+						<!-- ––––––––– 5 ––––––––– -->
+						<div class="row">
+							<div class="four columns cv-time">
+								<p>Aug 2007 - Jun 2010</p>
+							</div>
+							<div class="eight columns cv-title">
+								<h5>Physical and Athletics Education</h5>
+								<p>Malvik Videregåendeskole</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					<p class="last-update">Last updated 01.01.2018</p>
+				</div>
+
+			</div>
+		</div>
+<!-- Primary Page Layout: Cover Letter
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="cl" class="section cl-page">
+			<div class="container">
+				<div class="row">
+					<div class="header u-full-width">
+						<h1>Cover Letter!</h1>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Primary Page Layout: Referanses
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="ref" class="section ref-page">
+			<div class="container">
+				<div class="row">
+					<div class="header u-full-width">
+						<h1>Cover Letter!</h1>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Primary Page Layout: Portfolio
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="port" class="section port-page">
+			<div class="container">
+				<div class="row">
+					<div class="header u-full-width">
+						<h1>Cover Letter!</h1>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!-- Primary Page Layout: Where Page
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="where" class="section where-page">
+			<div class="container">
+				<div class="row">
+					<div class="header u-full-width">
+						<header class="map-header">
+							<h3>My Google Maps Demo</h3>
+						</header>
+						<div id="map"></div>
+						<footer class="map-footer">
+							<div>
+								<h4>Headline!!</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+									industry. Lorem Ipsum has been the industry's standard dummy text 
+									ever since the 1500s, when an unknown printer took a galley of type 
+									and scrambled it to makea type specimen book. It has survived not 
+									only five centuries, aining Lorem Ipsum passages, 
+									and more recently with desktop publishing software like Aldus PageMaker 
+									including versions of Lorem Ipsum.</p>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
 	
+
+<!-- Primary Page Layout: Contact
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div id="port" class="section port-page">
+			<div class="container">
+				<div class="row">
+					<div class="header u-full-width">
+						<h1>Cover Letter!</h1>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+				</div>
+
+				<!-- The contact form -->
+				<form>
+					<div class="row">
+						<div class="six columns">
+							<label for="exampleEmailInput">Your email</label>
+							<input class="u-full-width" type="email" placeholder="example@email.com" id="exampleEmailInput">
+						</div>
+						<div class="six columns">
+							<label for="exampleRecipientInput">Reason for contacting</label>
+							<select class="u-full-width" id="exampleRecipientInput">
+								<option value="Option 1">Questions</option>
+								<option value="Option 2">Work</option>
+								<option value="Option 3">Can I get your number?</option>
+							</select>
+						</div>
+					</div>
+					<label for="exampleMessage">Message</label>
+					<textarea class="u-full-width" placeholder="Hi Henry …" id="exampleMessage"></textarea>
+					<label class="example-send-yourself-copy">
+						<input type="checkbox">
+						<span class="label-body">Send a copy to yourself</span>
+					</label>
+					<input class="button-primary" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		
+	</main>
+
+	<!-- JavaScript
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="js/myScripts.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDeFpkCX8efh8vTQYZPqOfDkBTokI2tew&callback=initMap">
+	</script>
+
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 

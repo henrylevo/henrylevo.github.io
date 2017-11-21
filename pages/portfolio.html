@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/style.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="../images/favicon.png">
@@ -34,40 +34,47 @@
 
 	<!-- Primary Manu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  	<div class="navbar">
-		<div class="persona">
-			<img src="../images/headshot.jpg" alt="portrait">
-			<h3>Henry Levo</h3>
-			<p>Web Designer & Web Developer</p>
-		</div>
-		<div class="menubar">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="cv.html">Curriculum Vitae</a></li>
-				<li><a href="cl.html">Cover Letter</a></li>
-				<li><a href="ref.html">Referanses</a></li>
-				<li><a class="active" href="portfolio.html">Portfolio</a></li>
-				<li><a href="where.html">Where am I now?</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		<div class="copyright">
-			<p>Developed by Henry Levo</p>
-		</div>
-	</div>
+	<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="persona">
+            <img src="../images/headshot.jpg" alt="portrait">
+            <h3>Henry Levo</h3>
+            <p>Web Designer & Web Developer</p>
+            <div class="menubar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="cv.html">Curriculum Vitae</a></li>
+                    <li><a href="cl.html">Cover Letter</a></li>
+                    <li><a href="ref.html">Referanses</a></li>
+                    <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                    <li><a href="where.html">Where am I now?</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Developed by Henry Levo</p>
+        </div>
+    </div>
+    <span onclick="openNav()" class="menubtn fa">&#xf0c9;</span>
 
 	<!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <main>
+    <main id="main" class="map-page">
         <div class="container">
             <div class="row">
                 <div class="holder u-full-width">
-									<h1>Portfolio!</h1>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h1>Portfolio!</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
         </div>
     </main>  
+
+	<!-- JavaScript
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="../js/myScripts.js"></script>
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
