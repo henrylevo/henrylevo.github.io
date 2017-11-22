@@ -23,6 +23,14 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Favicon
@@ -78,26 +86,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<main id="main">
 
-		<div class="section hero">
-			<div class="element-animation container landingpage">
+		<section class="section hero">
+			<div class="container landingpage">
 				<div class="row">
-					<img src="images/headshot.jpg" alt="portrait">
-					<h1>Henry Levo</h1>
-					<h5>Web Designer & Developer</h5>
-					<p>jbjwfaw</p>
-				</div>
-				<div class="row">
-					<p class="phototag">Photo by
-						<a href="https://unsplash.com/photos/aRTjFXs6HNc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas Franco</a> on
-						<a href="https://unsplash.com/">Unsplash</a>
-					</p>
+					<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
+						<img src="images/headshot.jpg" alt="portrait">
+					</section>
+					<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.2s">
+						<h1>Henry Levo</h1>
+					</section>
+					<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
+						<h5>Web Designer & Developer</h5>
+					</section>
+					<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
+						<p>Introduction shit right here! Epic stuff!</p>
+					</section>
 				</div>
 			</div>
-		</div>
+
+			<div class="row">
+				<p class="phototag">Photo by
+					<a href="https://unsplash.com/photos/1LR2wt9dCSk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hollie Harmsworth</a> on
+					<a href="https://unsplash.com/">Unsplash</a>
+				</p>
+			</div>
+		</section>
 
 <!-- Primary Page Layout: CV
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="cv" class="section cv-page">
+		<section id="cv" class="section cv-page">
 			<div class="container">
 				<div class="row">
 					<div class="header u-full-width">
@@ -253,10 +270,10 @@
 				</div>
 
 			</div>
-		</div>
+		</section>
 <!-- Primary Page Layout: Cover Letter
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="cl" class="section cl-page">
+		<section id="cl" class="section cl-page">
 			<div class="container">
 				<div class="row">
 					<div class="header u-full-width">
@@ -265,37 +282,37 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-<!-- Primary Page Layout: Referanses
+<!-- Primary Page Layout: Referances
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="ref" class="section ref-page">
+		<section id="ref" class="section ref-page">
 			<div class="container">
 				<div class="row">
 					<div class="header u-full-width">
-						<h1>Cover Letter!</h1>
+						<h1>Referances!</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 <!-- Primary Page Layout: Portfolio
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="port" class="section port-page">
+		<section id="port" class="section port-page">
 			<div class="container">
 				<div class="row">
 					<div class="header u-full-width">
-						<h1>Cover Letter!</h1>
+						<h1>Portfolio!</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		
 <!-- Primary Page Layout: Where Page
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="where" class="section where-page">
+		<section id="where" class="section where-page">
 			<div class="container">
 				<div class="row">
 					<div class="header u-full-width">
@@ -318,16 +335,15 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	
+		</section>
 
 <!-- Primary Page Layout: Contact
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="port" class="section port-page">
+		<section id="contact" class="section contact-page">
 			<div class="container">
 				<div class="row">
 					<div class="header u-full-width">
-						<h1>Cover Letter!</h1>
+						<h1>Contact!</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					</div>
 				</div>
@@ -357,7 +373,7 @@
 					<input class="button-primary" type="submit" value="Submit">
 				</form>
 			</div>
-		</div>
+		</section>
 		
 	</main>
 
