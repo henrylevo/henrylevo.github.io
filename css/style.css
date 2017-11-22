@@ -157,6 +157,7 @@ Where Page
     color: #101B17;
     width: 50%;
     padding-top: 19%;
+    z-index: 1;
 }
 
 .landingpage img {
