@@ -29,15 +29,15 @@ Where Page
 /* Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
-    text-align: center;
-    padding: 0px !Important;
+    padding: 0px !important;
     height: 100vh;
-    background-color: #17263C;
+    background-color: #A0CED9;
 }
 
 .header {
     color: #fff; 
     text-align: center;
+    margin-bottom: 25px;
 }
 
 /* Main Page: Primary Menu
@@ -50,7 +50,7 @@ Where Page
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -134,10 +134,11 @@ Where Page
     overflow: hidden;
     right: 3vw;
     top: 2vh;
-    padding: 0px !Important;
+    padding: 0px !important;
     color: #101B17;
-    font-size: 1.5em !Important;
+    font-size: 1.5em !important;
     cursor: pointer;
+    z-index: 1;
 }
 
 
@@ -157,7 +158,6 @@ Where Page
     color: #101B17;
     width: 50%;
     padding-top: 19%;
-    z-index: 1;
 }
 
 .landingpage img {
@@ -168,46 +168,39 @@ Where Page
 
 .phototag {
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
     right: 5px;
     color: #fff;
     font-size: 0.7em;
     padding: 2px 5px;
     background-color: rgba(0, 0, 0, 0.45);
     border-radius: 9px;
+    margin-bottom: 0 !important;
 }
 
 /* CV Page: The CV
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .cv-page {
-    
-    
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .pages {
     background-color: #fff;
-    margin: 0px !Important;
-    height: 650px;
-    border-radius: 10px !Important;
+    margin: 10px 0 !important;
+    height: 100%;
+    border-radius: 10px !important;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-.page-one {
-    margin: 10px 0 0 15px !Important;
-    border-right: 1px solid #888;
-}
-
-.page-two {
-    margin: 10px 0 0 15px !Important;
-}
 
 .page-one > h3 {
+    padding-top: 20px; 
     text-align: center;
 }
 
 .page-two > h3 {
+    padding-top: 20px; 
     text-align: center;
 }
 
@@ -217,50 +210,103 @@ Where Page
     font-style: italic;
 }
 
-.switch-btn {
-    margin-top: 10px;
-}
-
-#classic-btn {
-    padding: 8px;
-    border-radius: 10px 0 0 10px;
-    font-size: 12px;
-    text-align: center;
-    color: #4F4F4F;
-    background: #333333;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px 25px 25px 25px;
-}
-
-#styled-btn {
-    padding: 8px;
-    margin-left: -5px;
-    border-radius: 0 10px 10px 0;
-    font-size: 12px;
-    text-align: center;
-    color: #E0E0E0;
-    background: #3397F1;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px 25px 25px 25px;
-}
-
 .cv-time {
-    margin-top: 5px;
     font-size: 0.8em;
 }
 
-.cv-title > h5, p {
-    margin: 0 !Important;
+.cv-time > p {
+    font-size: 0.8em;
+    margin: 5px 0 0 10px !important;
+}
+
+.cv-title {
 }
 
 .cv-title > h5 {
     font-size: 1.3em;
+    margin: 0px !important;
+    text-align: center;
     color: palevioletred;
 }
 
 .cv-title > p {
     font-size: 0.9em;
-    margin-bottom: 10px !Important;
+    margin: 0 0 15px 0 !important;
+    text-align: center;
+}
+
+.switch {
+    height: 50px;
+    padding: 20px;
+}
+.onoffswitch {
+    position: relative; 
+    width: 92px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none !important;
+}
+.onoffswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #FFFFFF; 
+    border-radius: 50px;
+}
+.onoffswitch-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: 
+    left; width: 50%; 
+    height: 35px; 
+    padding: 0; 
+    line-height: 35px;
+    font-size: 13px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Styled";
+    padding-left: 5px;
+    background-color: #EEEEEE; 
+    color: #08C2F0;
+    text-align: left;
+}
+.onoffswitch-inner:after {
+    content: "Classic";
+    padding-right: 5px;
+    background-color: #EEEEEE; 
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; 
+    width: 25px; margin: 5px;
+    background: #A1A1A1;
+    position: 
+    absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 53px;
+    border: 2px solid #FFFFFF; 
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #34A7C1; 
 }
 
 /* Where Page: Google Maps
